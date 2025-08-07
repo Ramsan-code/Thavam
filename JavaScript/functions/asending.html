@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sort Three Numbers </title>
+  <style>
+    body {
+      background: #bbb4cf;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 800px;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+
+
+
+    .Finder input[type="number"],
+    .Finder select {
+      width: 90%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .button {
+      background: #4615a0;
+      color: #fff;
+      border: none;
+      width: 50%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+
+  <form onsubmit="asendingorder(event)">
+
+
+    <h1>Sort Three Number</h1>
+    <p>Enter Number 1:</p>
+    <input type="number" id="num1" required>
+
+    <p>Enter Number 2:</p>
+    <input type="number" id="num2" required>
+
+    <p>Enter number 3:</p>
+    <input type="number" id="num3" required>
+    <br><br>
+
+
+    <select name="" id="Sort">
+      <option>asending </option>
+      <option>desending</option>
+    </select><br>
+
+
+
+    <button class="button" type="submit">Sort</button><br>
+    <button class="button" type="button" onclick="clear" ()>clear</button>
+    <div class="result" id="result"></div>
+  </form>
+  <script>
+    function asendingorder(event) {
+      e.preventDefault();
+
+      const a = parseFloat(document.getElementById)("num1").value
+      const b = parseFloat(document.getElementById)("num2").value
+      const c = parseFloat(document.getElementById)("num3").value
+      document.getElementById("result").value = result;
+      let resultText = "";
+      // if (a > b) {
+      //   resultText = `a${a}b${b}`
+      // }
+      // else if (a > c) {
+      //   resultText = ``
+      // }
+      // else if (b > c) {
+      //   resultText = ``
+      // }
+
+
+
+    }
+ 
+  </script>
+</body>
+
+</html>

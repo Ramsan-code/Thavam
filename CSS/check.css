@@ -1,0 +1,87 @@
+ body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0c3fc, #fce38a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .pricing-container {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card.pro {
+      background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+      color: white;
+    }
+
+    .card h3 {
+      margin: 0.5rem 0;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .price span {
+      font-weight: normal;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+      text-align: left;
+    }
+
+    ul li::before {
+      content: "✔";
+      margin-right: 0.5rem;
+      color: #6a11cb;
+    }
+
+    .pro ul li::before {
+      color: white;
+    }
+
+    button {
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      border: none;
+      border-radius: 30px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .pro button {
+      background: white;
+      color: #6a11cb;
+    }
+
+    @media (max-width: 768px) {
+      .pricing-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }

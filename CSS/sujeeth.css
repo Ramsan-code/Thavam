@@ -1,0 +1,36 @@
+ body {
+      margin: 0;
+      height: 100vh;
+      background-image: url("https://www.vmcdn.ca/f/files/shared/feeds/cp/2020/04/dpi10459620.jpg?w=650");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .center-box {
+      background-color: rgba(255, 255, 255, 0.8); 
+      padding: 20px;
+      border-radius: 15px;
+      
+      text-align: center;
+    }
+
+    .center-box img {
+      max-width: 200%;
+      height: 600px;
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #c91e1e;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      font-family: sans-serif;
+      font-size: 18px;
+    }

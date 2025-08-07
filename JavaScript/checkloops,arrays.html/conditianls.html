@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Basic if statement
+// let age = 18;
+// if (age >= 18) {
+//     console.log("You can vote!");
+// }
+
+// Multiple conditions with logical operators
+// let weather = "sunny";
+// let temperature = 25;
+
+// if (weather === "sunny" && temperature > 20) {
+//     console.log("Perfect day for a picnic!");
+// }
+
+// Checking for existence
+// let user = {name: "John", email: "john@example.com"};
+// if (user.email) {
+//     console.log("User has an email address");
+// }
+
+
+//real time example 
+// function checkUserAccess(user) {
+//     // Check if user exists
+//     if (!user) {
+//         console.log("❌ No user provided");
+//         return false;
+//     }
+    
+    // Check if user is active
+    // if (user.isActive) {
+    //     console.log("✅ User has access");
+    //     return true;
+    // }
+    
+    // Check if user has admin role
+    // if (user.role === "admin") {
+    //     console.log("✅ Admin access granted");
+    //     return true;
+    // }
+    
+    // Check subscription status
+//     if (user.subscription && user.subscription.isValid) {
+//         console.log("✅ Subscription access granted");
+//         return true;
+//     }
+    
+//     console.log("❌ Access denied");
+//     return false;
+// }
+
+// Usage
+// const user1 = {
+//     name: "Alice",
+//     isActive: true,
+//     role: "user",
+//     subscription: {isValid: true}
+// };
+
+// checkUserAccess(user1); // ✅ User has access
+
+
+//ifelse statement  
+// Simple if-else
+// let time = 14;
+// if (time < 12) {
+//     console.log("Good morning!");
+// } else {
+//     console.log("Good afternoon/evening!");
+// }
+
+// Boolean logic
+// let isLoggedIn = false;
+// if (isLoggedIn) {
+//     console.log("Welcome back!");
+// } else {
+//     console.log("Please log in");
+// }
+
+// Comparing values
+// let score = 75;
+// if (score >= 60) {
+//     console.log("You passed!");
+// } else {
+//     console.log("You failed. Try again!");
+// }
+
+//ifelse real time 
+
+// function processCheckout(cart, user) {
+//     if (cart.items.length === 0) {
+//         console.log("❌ Cart is empty");
+//         return false;
+//     } else {
+//         console.log(`✅ Processing ${cart.items.length} items`);
+//     }
+    
+//     if (user.paymentMethod) {
+//         console.log("✅ Payment method found");
+//         return processPayment(cart, user);
+//     } else {
+//         console.log("❌ No payment method on file");
+//         return false;
+//     }
+// }
+
+// function processPayment(cart, user) {
+//     let total = cart.getTotal();
+    
+//     if (user.balance >= total) {
+//         user.balance -= total;
+//         console.log(`✅ Payment successful! Charged $${total}`);
+//         console.log(`Remaining balance: $${user.balance}`);
+//         return true;
+//     } else {
+//         console.log(`❌ Insufficient funds. Need $${total}, have $${user.balance}`);
+//         return false;
+//     }
+// }
+
+
+// Grade calculation
+// let score = 85;
+// let grade;
+
+// if (score >= 90) {
+//     grade = "A";
+// } else if (score >= 80) {
+//     grade = "B";
+// } else if (score >= 70) {
+//     grade = "C";
+// } else if (score >= 60) {
+//     grade = "D";
+// } else {
+//     grade = "F";
+// }
+
+// console.log(`Your grade is: ${grade}`); // Your grade is: B
+
+// Weather recommendations
+// let temperature = 15;
+// let weather = "cloudy";
+
+// if (temperature > 30) {
+//     console.log("🌞 It's hot! Stay hydrated and find shade.");
+// } else if (temperature > 20 && weather === "sunny") {
+//     console.log("🌤️ Perfect weather for outdoor activities!");
+// } else if (temperature > 10) {
+//     console.log("🧥 Mild weather. You might need a light jacket.");
+// } else if (temperature > 0) {
+//     console.log("🧣 It's cold! Dress warmly.");
+// } else {
+//     console.log("🥶 Freezing! Stay indoors if possible.");
+// }
+
+//real time example
+// function getUserPermissions(user) {
+//     let permissions = [];
+    
+//     if (user.role === "admin") {
+//         permissions = ["read", "write", "delete", "manage_users", "system_config"];
+//         console.log("👑 Admin access granted - Full permissions");
+//     } else if (user.role === "moderator") {
+//         permissions = ["read", "write", "delete", "moderate_content"];
+//         console.log("🛡️ Moderator access granted");
+//     } else if (user.role === "editor") {
+//         permissions = ["read", "write"];
+//         console.log("✏️ Editor access granted");
+//     } else if (user.role === "viewer") {
+//         permissions = ["read"];
+//         console.log("👀 Viewer access granted");
+//     } else {
+//         permissions = [];
+//         console.log("❌ No permissions granted - Unknown role");
+//     }
+    
+    // return permissions;
+// }
+
+// Enhanced with subscription check
+// function getAdvancedPermissions(user) {
+//     if (user.role === "admin") {
+//         return ["all_permissions"];
+//     } else if (user.role === "premium" && user.subscription?.isActive) {
+//         return ["read", "write", "premium_features"];
+//     } else if (user.role === "premium" && !user.subscription?.isActive) {
+//         console.log("⚠️ Premium role but subscription expired");
+//         return ["read"];
+//     } else if (user.trial && user.trial.daysRemaining > 0) {
+//         console.log(`🎁 Trial user - ${user.trial.daysRemaining} days remaining`);
+//         return ["read", "write", "trial_features"];
+//     } else if (user.isVerified) {
+//         return ["read", "write"];
+//     } else {
+//         return ["read"];
+//     }
+// }
+
+// Using if-else if-else:
+        // let temperature = 25;
+        // let weather;
+        // if (temperature > 30) {
+        //     weather = "Hot";
+        // } else if (temperature > 20) {
+        //     weather = "Warm";
+        // } else {
+        //     weather = "Cold";
+        // }
+        // console.log(weather); // Output: "Warm"
+        // // Using Nested Ternary (Less Readable, Not Recommended):
+        // let temp = 25;
+        // let weatherNew = temp > 30 ? "Hot-x" : temp > 20 ? "Warm-x" : "Cold-x";
+        // console.log(weatherNew); // Output: "Warm-x"
+</script>
+</html>

@@ -1,0 +1,60 @@
+ body {
+        background-image: url(https://www.vmcdn.ca/f/files/shared/feeds/cp/2020/04/dpi10459620.jpg;w=650);
+        background-size: cover;
+        background-repeat: no-repeat;
+         background-image: url(/HTML/WhatsApp\ Image\ 2025-06-26\ at\ 8.52.56\ PM.jpeg);
+        height: 20px;
+        width: 20px;
+        margin: 50px; }
+
+         div {box-sizing: border-box; 
+        
+         background-repeat: no-repeat; 
+         background-size: ; 
+         display: ; 
+         margin: auto;  width: 15%; 
+    }
+
+
+    h1 {
+        color: rgb(212, 15, 15);
+    }
+
+    div {
+  width: 300px;
+  height: 100px;  
+  padding: 50px;
+  border: 1px solid red;
+  box-sizing: border-box;
+} 
+
+    p {
+        height: 40px;
+        width: 50px; 
+        font-size: x-large;
+        font-family: sans-serif;
+        font-style: italic;
+        color: rgb(218, 76, 178);
+        font-weight: 900;
+    }
+
+     img { 
+
+     text-align: left; }
+
+
+     .test {
+ 
+         background-color: rgba(235, 232, 229, 0.147); 
+    
+    padding: 10px;  
+    margin: 20px;  
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    
+     border-radius: 10px; 
+    } 
+     .ramsan {
+        
+        height: 20%
+        width: 20% 
+        }

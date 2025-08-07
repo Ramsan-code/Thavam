@@ -1,0 +1,67 @@
+.container {
+        background-color: pink;
+        /* display: grid;;
+        gap: 20px;
+         justify-content: center; */
+        
+
+    }
+
+    .Basicplan {
+        border-radius: 5px;
+        box-shadow: 0 0 15px;
+        padding: 30px;
+        background-color: aliceblue;
+          /* display: grid;;
+        gap: 20px;
+         justify-content: center; */
+
+
+
+    }
+
+    .button1 {
+        background-color: rgb(60, 34, 189);
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 30px;
+        font-weight: bold;
+    }
+
+    .Proplan {
+        border-radius: 5px;
+        box-shadow: 0 0 15px;
+        background-color: blue;
+        padding: 30px;
+          /* display: grid;;
+        gap: 20px;
+         justify-content: center; */
+    }
+
+    .button2 {
+        background-color: rgb(46, 24, 160);
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 30px;
+        font-weight: bold;
+    }
+
+    .Enterprise {
+        border-radius: 5px;
+        box-shadow: 0 0 15px;
+        padding: 30px;
+        background-color: aliceblue;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .button3 {
+        background-color: rgb(46, 24, 160);
+        color: white;
+        padding: 15px;
+        border: none;
+        border-radius: 30px;
+        font-weight: bold;
+    }

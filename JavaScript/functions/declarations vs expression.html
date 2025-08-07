@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // This works - function declarations are hoisted
+// console.log(declarationFunction()); // Output: "I'm hoisted!"
+
+// function declarationFunction() {
+//     return "I'm hoisted!";
+// }
+
+// // This doesn't work - function expressions are NOT hoisted
+// console.log(expressionFunction()); // Error: Cannot access before initialization
+
+// const expressionFunction = function() {
+//     return "I'm not hoisted!";
+// };
+// const expressionFunction = function name(params) {
+//     return"im ramsan";
+// }
+
+// Function declaration: Created during compile time
+// function alwaysAvailable() {
+//     return "Available everywhere in scope";
+// }
+
+// // Function expression: Created during runtime
+// const conditionalFunction = function() {
+//     return "Created when this line runs";
+// };
+
+// This works but is not recommended
+// if (true) {
+//     function declaration() {
+//         return "Declaration in block";
+//     }
+// }
+
+// // This is the proper way for conditional functions
+// let expression;
+// if (true) {
+//     expression = function() {
+//         return "Expression in block";
+//     };
+// }
+// function add(a,b){
+//     let result = a+b;
+//     return result
+// } 
+
+// console.log(add(12,20));
+
+</script>
+</html>

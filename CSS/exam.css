@@ -1,0 +1,33 @@
+ .container {
+    background-color: blanchedalmond; 
+
+  }
+
+  .heading {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(94, 30, 30);
+    font-weight: 800;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  }
+
+  card-title {
+    text-align: center;
+
+  }
+
+  /* .card-body{
+    height: 300px;
+    width: ;
+
+  } */
+
+  card-text {
+    text-align: center;
+
+  }
+
+  /* .pagination{
+    color: brown;
+
+  } */

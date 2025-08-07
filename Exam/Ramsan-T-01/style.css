@@ -1,0 +1,15 @@
+/* h1{
+    background-color: black;
+}.container{ */
+        /* display: ; */
+    /* } */
+    .nav{
+        background-color: #1f3b4d;
+         display: flex; 
+        justify-self: center;
+         text-align: center; 
+    }
+    .navbutton{
+        background-color: #e67e22;
+        text-align: right;
+    }

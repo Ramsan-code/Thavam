@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/variable.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- <h1>JavaScript is an interpreted programming language</h1>   -->
+    <span class="JS">JS</span>
+    <div>
+        <div><h2 class="header">Variable Declaration & <span class="Initialization">Initialization</span></h2></div>
+    </div>
+    <br>
+    <h3 class="heading">JavaScript: uses three main Keywords to declare variables:</h3>
+    <table class="table" border="1"cellpadding="30" cellspacing="0">
+        <tr>
+            <th>Keyword</span></th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <th><span class="keys">let</span></th>
+            <td>Modern way (block-scoped).Preferred for values that will change <br>reassignable</td>
+        </tr>
+        <tr>
+            <th><span class="keys">const</span></th>
+            <td>Constant (block-scoped). preferred for values that won't change (but object properties can change)</td>
+        </tr>
+        <tr>
+            <th><span class="keys">var</span></th>
+            <td>Old way (function-scoped).Avoid using in modern JS.</td>
+        </tr>
+    </table>
+    <br>
+    <div>
+        <pre> &#11106   Example:</pre>
+    </div>
+    <div class="Keywords">
+        <pre><span class="let">let</span> <span class="age">age</span> = <span class="num1">25; </span>                     <span class="Mutable">//Mutable</span> </pre><br>
+        <pre><span class="const">const</span> <span class="PI">PI</span> = <span class="num2">3-14;</span>                   <span class="Immutable">//Immutable (reassignment throws error) </span> </pre><br>
+        <pre><span class="var">var</span><span class="name">name</span>  = <span class="Alice">"Alice";</span>                <span class="Avoid">//Avoid (leaks scope)</span></pre><br>
+    </div>
+    <div class="footer">
+      <div class="Tech"><h1>Stepping  Stone to Tech Life</h1>
+      </div>
+       
+         <div class="img"><img src="https://www.uki.life/wp-content/uploads/2024/09/source-image.png" alt="UKILOGO"  width="100px"> </div>
+    </div>
+   
+
+
+
+    <script>
+        // alert("JavaScript is running")                              // ALERT
+        // console.log("what is the spider monkey in javascript")     //LOGS
+        // console.error("error makes errors")                        //ERRORS
+        // console.info("information is wealth")                      //INFORMATION
+        // console.warn("The final warning")                          //WARNING
+
+        //<--------------------Variable Declaration & initialization------------------>
+        // <-------------------------let Keyword----------------->
+        //let x;                                       // declaration only
+        //let age = 25;                                //  can be ressigned to NEW Value (but 25 itself is immutable)
+        //let x = 10;                                 // declaration + initialization
+        //let num = 5;                               // declaration + initialization
+        //num = 10;                                 // reassignment is allowed
+        //console.log(num);                        // Output: 10
+        //const PI = 3.14;                     // Immutable (reassignment throws error)
+
+
+
+        //<-----------------const Keyword-------------------->
+        //const pi = 3.14;                        // declaration + initialization (mandatory) //can Never be reassined
+        //pi = 3.15;                             // Error: Assignment to constant variable
+        //console.log(pi);                      // Output: 3.14
+        //console.log(x);                    // Output: 10
+
+
+        //<----------------------var Keyword---------------------->
+        //var x = 5;
+        //var x = 10;                         // Redeclaration allowed
+        // var name = "Alice";              // Avoid (leaks scope)
+        // console.log(a); // Output: undefined (because of hoisting)
+        //var a = 20;
+        // // if (true) {
+        //var test = "hello";}
+        //console.log(test); // Output: hello (because `var` is not block-scoped)
+
+
+        //<-------------------------------------Difference Between let and const---------------------------------->
+        //Feature	                                   let	                    const
+        //Reassignment	                             Allowed	                Not allowed
+        //Redeclaration in same scope	             Not allowed     	        Not allowed
+        //Initialization at the time of declaration	 Optional	                Mandatory
+        //Scope	                                     Block scope	            Block scope       
+        
+        
+
+   //Feature       | `var`                              | `let`                     | `const`                   |
+  //------------- | ---------------------------------- | ------------------------- | ------------------------- |
+  // Scope         | **Function scope**                 | **Block scope**           | **Block scope**           |
+  //Redeclaration | **Allowed**                        |  Not allowed              | Not allowed             |
+  // Reassignment  | **Allowed**                        | **Allowed**               | Not allowed             |
+  // Hoisting      | **Yes (initialized as undefined)** | Yes (but not initialized) | Yes (but not initialized) |
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

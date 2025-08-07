@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Number Finder</title>
+    <style>
+        body {
+            background: #b3dbb2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .Finder {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        .Finder h1 {
+            margin-bottom: 20px;
+            color: green;
+        }
+
+        .Finder input[type="number"],
+        .Finder input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .button {
+            background: #0d7210;
+            color: #fff;
+            border: none;
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Finder">
+        <h1>Biggest Number Finder</h1>
+        <form onclick="bigint(event)">
+
+        <p>Number 1 (a)</p>
+        <input type="number" id="no1" required>
+
+        <p>Number 2 (b)</p>
+        <input type="number" id="no2" required>
+
+        <p>Number 3 (c)</p>
+        <input type="number" id="no3" required>
+
+        
+        <button class="button" type="submit">Compare</button>
+        </form>
+
+        <div class="result" id="result"></div>
+    </div>
+    <script>
+
+        function bigint(e) {
+             e.preventDefault();
+
+            const a = parseFloat(document.getElementById('no1').value);
+            const b = parseFloat(document.getElementById('no2').value);
+            const c = parseFloat(document.getElementById('no3').value);
+
+            let resultText = "";
+            if (a === b && b === c) {
+                resultText = "a, b, c are equal and biggest"
+            }
+            else if (a === b && a > c) {
+                resultText = `a(${a}), b(${b}) are equal and biggest`
+            }
+            else if (a === c && a > b) {
+                resultText = `a(${a}) and c(${c}) are equal and biggest`
+            }
+            else if (b === c && b > a) {
+                resultText = `b(${b}) and c(${c}) are equal and biggest.`
+            }
+            else if (a > b && a > c) {
+                resultText = `a(${a}) is the biggest`
+            }
+            else if (b > a && b > c) {
+                resultText = `b(${b}) is the biggest`
+            }
+            else if (c > a && c > b) {
+                resultText = `c(${c}) is the biggest`
+            }
+            document.getElementById("result").innerHTML = resultText;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

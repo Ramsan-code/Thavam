@@ -1,0 +1,76 @@
+ div.a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+        
+
+    }
+
+    .table1 {
+        padding: 20px;
+        height: 400px;
+        width: 900px;
+        border-color: black;
+        border-radius: 10px;
+        box-shadow: 0 0 10px;
+        border: none;
+        
+
+
+
+
+    }
+
+    .table2 {
+        padding: 20px;
+        height: 400px;
+        width: 900px;
+        box-shadow: black;
+        margin-right: 10px;
+        box-shadow: 0 0 10px;
+
+    }
+
+
+
+    .heading {
+        color: darkblue;
+        text-align: center;
+
+    }
+
+
+    .header1 {
+        color: yellow;
+        font-weight: 800;
+        padding: 5px;
+        background-color: red;
+
+    }
+
+    .header2 {
+        color: blue;
+        font-weight: 800;
+        padding: 5px;
+        background-color: yellow;
+    }
+
+    .Extras {
+        font-size: 18px;
+
+    }
+
+    .Total {
+        font-size: 18px;
+    }
+
+    .player {
+        background-color: aqua;
+        border-collapse: collapse;
+    }
+
+    div {
+        display: flex;
+        box-shadow: 1px 0px px;
+    }

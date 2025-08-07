@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Info Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Student Info Form</h1>
+  </header>
+  <main>
+    <form id="studentForm">
+      <label>Full Name:
+        <input type="text" id="fullName" required />
+      </label>
+      <label>Age:
+        <input type="number" id="age" required />
+      </label>
+      <label>Email:
+        <input type="email" id="email" required />
+      </label>
+      <fieldset>
+        <legend>Gender</legend>
+        <label><input type="radio" name="gender" value="Male" /> Male</label>
+        <label><input type="radio" name="gender" value="Female" /> Female</label>
+      </fieldset>
+      <fieldset>
+        <legend> Subjects</legend>
+        <label><input type="checkbox" name="subjects" value="Math" /> Math</label>
+        <label><input type="checkbox" name="subjects" value="Science" /> Science</label>
+        <label><input type="checkbox" name="subjects" value="English" /> English</label>
+      </fieldset>
+
+      <input type="submit" id="submit" onclick="displayData(event)"></button>
+      <button type="button" id="clear" onclick="ClearEntries()">Clear Entries </button>
+
+
+    </form>
+    <div id="output"></div>
+  </main>
+  <footer>
+    <p> Weekend Task - JS Basics</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

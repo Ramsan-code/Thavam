@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+}
+
+header,
+footer {
+  background-color: #0d73d8;
+  color: white;
+  text-align: center;
+  padding: 2px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px;
+}
+
+form {
+  background: white;
+  padding: 32px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 50%;
+}
+
+label,
+fieldset {
+  display: block;
+  margin-bottom: 16px;
+}
+
+input[type=\"text\"],
+input[type=\"number\"],
+input[type=\"email\"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+}
+
+button {
+  padding: 8px;
+  margin-right: 8px;
+  background-color: #0d73d8;
+  color: white;
+  border-radius: 5px;
+}
+#output{
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  text-align: left;
+}
